@@ -13,7 +13,7 @@
     name: nodejs
     state: present
 - name: Copy the code
-  tempalte: 
+  template: 
     src: "templates\appserver.js.j2"
     dest: "{{ folderpath }}/hello.js"
 - name: Install pm2
