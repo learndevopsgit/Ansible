@@ -5,7 +5,7 @@
     update_cache: yes
 - name: Insall utilities
   apt:
-    name: "{{ tree }}"
+    name: "{{ item }}"
     state: present
   loop:
   - git
