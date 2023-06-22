@@ -1,4 +1,4 @@
 # from galaxy for Redis server
 - src: vitalied.redis
 # from galaxy for Mongo DB
-- src: community.mongodb
+- src: undergreen.mongodb
