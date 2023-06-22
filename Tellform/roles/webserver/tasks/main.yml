@@ -1,2 +1,12 @@
 ---
 # tasks file for webserver
+- name: Insall nginx
+  apt: 
+    name: nginx
+    state: present
+- name: Copy default file
+  tempalte: 
+    src: templates/default.j2
+    dest: /etc/nginx/sites-available/default
+  notify: Restart Nginx
+

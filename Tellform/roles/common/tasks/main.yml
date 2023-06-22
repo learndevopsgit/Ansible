@@ -1,2 +1,12 @@
 ---
 # tasks file for common
+- name: "update packages"
+  apt:
+    update_cache: yes
+- name: Insall utilities
+  apt:
+    name: "{{ tree }}"
+    state: present
+  loop:
+  - git
+  - tree
