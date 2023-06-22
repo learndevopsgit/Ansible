@@ -1,4 +1,4 @@
 # from galaxy for Redis server
-- src: pishro_cloud.redis
+- src: vitalied.redis
 # from galaxy for Mongo DB
 - src: community.mongodb
