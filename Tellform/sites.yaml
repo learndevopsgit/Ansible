@@ -4,12 +4,12 @@
   roles:
     - common
 
-- hosts: app
+- hosts: appserver
   become: yes
   roles:
     - appserver
 
-- hosts: web
+- hosts: webserver
   become: yes
   roles: 
     - webserver
